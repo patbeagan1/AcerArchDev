@@ -1,0 +1,6 @@
+//the compiling command, this returns object code for 32 bit x86 machine.
+nasm -f elf hello.asm
+
+//the linking command, this returns an executable based on the library that the object code will be base on, in this case it is 32 bits for an x86 cpu
+ld -m elf_i386 -s -o hello hello.o
+

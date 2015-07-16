@@ -1,0 +1,387 @@
+(precise)patrick@localhost:~/Desktop/C++/filesystem$ ./filesystem 
+
+About to read the input file...
+The file was opened correctly.
+Creating new file named "disk0". If this was not your intention, please rewrite the input file.
+file: ...disk0...was not found. I'll try making a new file by that name. Please restart the program after.
+Creating  a 128KB  file in disk0
+This file will act as a dummy disk and will hold your filesystem
+Formatting your filesystem...
+(precise)patrick@localhost:~/Desktop/C++/filesystem$ ./filesystem 
+
+About to read the input file...
+The file was opened correctly.
+Creating new file named "disk0". If this was not your intention, please rewrite the input file.
+File disk0 successfully opened
+        [SUCCESS]
+Creating file1.c...
+P-0     Checking that there is space on the disk.
+        FBL: 1000000000000000000000000000000000000000000000000000000000000000
+             0000000000000000000000000000000000000000000000000000000000000000
+        There is. Attempting to create the file...
+                Name: file1.c
+                Size: 3
+P-176   [SUCCESS]
+Creating file2.c...
+P-176   Checking that there is space on the disk.
+        FBL: 1111000000000000000000000000000000000000000000000000000000000000
+             0000000000000000000000000000000000000000000000000000000000000000
+        There is. Attempting to create the file...
+                Name: file2.c
+                Size: 8
+P-224   [SUCCESS]
+Creating file3.c...
+P-224   Checking that there is space on the disk.
+        FBL: 1111111111110000000000000000000000000000000000000000000000000000
+             0000000000000000000000000000000000000000000000000000000000000000
+        There is. Attempting to create the file...
+                Name: file3.c
+                Size: 4
+P-272   [SUCCESS]
+Creating a.out...
+P-272   Checking that there is space on the disk.
+        FBL: 1111111111111111000000000000000000000000000000000000000000000000
+             0000000000000000000000000000000000000000000000000000000000000000
+        There is. Attempting to create the file...
+                Name: a.out
+                Size: 5
+P-320   [SUCCESS]
+Creating lab1.ja...
+P-320   Checking that there is space on the disk.
+        FBL: 1111111111111111111110000000000000000000000000000000000000000000
+             0000000000000000000000000000000000000000000000000000000000000000
+        There is. Attempting to create the file...
+                Name: lab1.ja
+                Size: 6
+P-368   [SUCCESS]
+Listing...
+        file1.c         @0      SIZE:3
+        file2.c         @1      SIZE:8
+        file3.c         @2      SIZE:4
+        a.out           @3      SIZE:5
+        lab1.ja         @4      SIZE:6
+        [SUCCESS]
+Writing file1.c @0...
+BLK-1   Rewrote the first 20 bytes of file1.c
+        from: 
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing file1.c @1...
+BLK-2   Rewrote the first 20 bytes of file1.c
+        from: 
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing file1.c @2...
+BLK-3   Rewrote the first 20 bytes of file1.c
+        from: 
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing file2.c @3...
+BLK-7   Rewrote the first 20 bytes of file2.c
+        from: 
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing file2.c @7...
+BLK-11  Rewrote the first 20 bytes of file2.c
+        from: 
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing file2.c @2...
+BLK-6   Rewrote the first 20 bytes of file2.c
+        from: 
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing file2.c @4...
+BLK-8   Rewrote the first 20 bytes of file2.c
+        from: 
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing file2.c @5...
+BLK-9   Rewrote the first 20 bytes of file2.c
+        from: 
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing a.out @0...
+BLK-16  Rewrote the first 20 bytes of a.out
+        from: 
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing a.out @1...
+BLK-17  Rewrote the first 20 bytes of a.out
+        from: 
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing a.out @2...
+BLK-18  Rewrote the first 20 bytes of a.out
+        from: 
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing a.out @3...
+BLK-19  Rewrote the first 20 bytes of a.out
+        from: 
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing a.out @4...
+BLK-20  Rewrote the first 20 bytes of a.out
+        from: 
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Deleting file3.c...
+P-128   [SUCCESS]
+Reading file1.c @2...
+        The first 20 bytes of file1.c
+        are: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Creating file4.c...
+P-4096  Checking that there is space on the disk.
+        FBL: 1111111111110000111111111110000000000000000000000000000000000000
+             0000000000000000000000000000000000000000000000000000000000000000
+        There is. Attempting to create the file...
+                Name: file4.c
+                Size: 7
+P-272   [SUCCESS]
+Listing...
+        file1.c         @0      SIZE:3
+        file2.c         @1      SIZE:8
+        file4.c         @2      SIZE:7
+        a.out           @3      SIZE:5
+        lab1.ja         @4      SIZE:6
+        [SUCCESS]
+Reading file2.c @4...
+        The first 20 bytes of file2.c
+        are: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Reading file2.c @5...
+        The first 20 bytes of file2.c
+        are: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Reading file2.c @6...
+        The first 20 bytes of file2.c
+        are: 
+        [SUCCESS]
+Deleting lab1.ja...
+P-128   [SUCCESS]
+Creating lab2.jav...
+P-368   Checking that there is space on the disk.
+        FBL: 1111111111111111111110000001110000000000000000000000000000000000
+             0000000000000000000000000000000000000000000000000000000000000000
+        There is. Attempting to create the file...
+                Name: lab2.jav
+                Size: 7
+P-368   [SUCCESS]
+Reading a.out @1...
+        The first 20 bytes of a.out
+        are: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Reading a.out @3...
+        The first 20 bytes of a.out
+        are: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Reading a.out @0...
+        The first 20 bytes of a.out
+        are: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Listing...
+        file1.c         @0      SIZE:3
+        file2.c         @1      SIZE:8
+        file4.c         @2      SIZE:7
+        a.out           @3      SIZE:5
+        lab2.jav        @4      SIZE:7
+        [SUCCESS]
+(precise)patrick@localhost:~/Desktop/C++/filesystem$ ./filesystem 
+
+About to read the input file...
+The file was opened correctly.
+Creating new file named "disk0". If this was not your intention, please rewrite the input file.
+File disk0 successfully opened
+        [SUCCESS]
+Creating file1.c...
+P-0     Checking that there is space on the disk.
+        FBL: 1111111111111111111111111111111000000000000000000000000000000000
+             0000000000000000000000000000000000000000000000000000000000000000
+        There is. Attempting to create the file...
+                Name: file1.c
+                Size: 3
+P-416   [SUCCESS]
+Creating file2.c...
+P-416   Checking that there is space on the disk.
+        FBL: 1111111111111111111111111111111111000000000000000000000000000000
+             0000000000000000000000000000000000000000000000000000000000000000
+        There is. Attempting to create the file...
+                Name: file2.c
+                Size: 8
+P-464   [SUCCESS]
+Creating file3.c...
+P-464   Checking that there is space on the disk.
+        FBL: 1111111111111111111111111111111111111111110000000000000000000000
+             0000000000000000000000000000000000000000000000000000000000000000
+        There is. Attempting to create the file...
+                Name: file3.c
+                Size: 4
+P-512   [SUCCESS]
+Creating a.out...
+P-512   Checking that there is space on the disk.
+        FBL: 1111111111111111111111111111111111111111111111000000000000000000
+             0000000000000000000000000000000000000000000000000000000000000000
+        There is. Attempting to create the file...
+                Name: a.out
+                Size: 5
+P-560   [SUCCESS]
+Creating lab1.ja...
+P-560   Checking that there is space on the disk.
+        FBL: 1111111111111111111111111111111111111111111111111110000000000000
+             0000000000000000000000000000000000000000000000000000000000000000
+        There is. Attempting to create the file...
+                Name: lab1.ja
+                Size: 6
+P-608   [SUCCESS]
+Listing...
+        file1.c         @0      SIZE:3
+        file2.c         @1      SIZE:8
+        file4.c         @2      SIZE:7
+        a.out           @3      SIZE:5
+        lab2.jav        @4      SIZE:7
+        file1.c         @5      SIZE:3
+        file2.c         @6      SIZE:8
+        file3.c         @7      SIZE:4
+        a.out           @8      SIZE:5
+        lab1.ja         @9      SIZE:6
+        [SUCCESS]
+Writing file1.c @0...
+BLK-1   Rewrote the first 20 bytes of file1.c
+        from: aaaaaaaaaaaaaaaaaaaa
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing file1.c @1...
+BLK-2   Rewrote the first 20 bytes of file1.c
+        from: aaaaaaaaaaaaaaaaaaaa
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing file1.c @2...
+BLK-3   Rewrote the first 20 bytes of file1.c
+        from: aaaaaaaaaaaaaaaaaaaa
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing file2.c @3...
+BLK-7   Rewrote the first 20 bytes of file2.c
+        from: aaaaaaaaaaaaaaaaaaaa
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing file2.c @7...
+BLK-11  Rewrote the first 20 bytes of file2.c
+        from: aaaaaaaaaaaaaaaaaaaa
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing file2.c @2...
+BLK-6   Rewrote the first 20 bytes of file2.c
+        from: aaaaaaaaaaaaaaaaaaaa
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing file2.c @4...
+BLK-8   Rewrote the first 20 bytes of file2.c
+        from: aaaaaaaaaaaaaaaaaaaa
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing file2.c @5...
+BLK-9   Rewrote the first 20 bytes of file2.c
+        from: aaaaaaaaaaaaaaaaaaaa
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing a.out @0...
+BLK-16  Rewrote the first 20 bytes of a.out
+        from: aaaaaaaaaaaaaaaaaaaa
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing a.out @1...
+BLK-17  Rewrote the first 20 bytes of a.out
+        from: aaaaaaaaaaaaaaaaaaaa
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing a.out @2...
+BLK-18  Rewrote the first 20 bytes of a.out
+        from: aaaaaaaaaaaaaaaaaaaa
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing a.out @3...
+BLK-19  Rewrote the first 20 bytes of a.out
+        from: aaaaaaaaaaaaaaaaaaaa
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Writing a.out @4...
+BLK-20  Rewrote the first 20 bytes of a.out
+        from: aaaaaaaaaaaaaaaaaaaa
+          to: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Deleting file3.c...
+P-128   [SUCCESS]
+Reading file1.c @2...
+        The first 20 bytes of file1.c
+        are: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Creating file4.c...
+P-4096  Checking that there is space on the disk.
+        FBL: 1111111111111111111111111111111111111111110000111111111110000000
+             0000000000000000000000000000000000000000000000000000000000000000
+        There is. Attempting to create the file...
+                Name: file4.c
+                Size: 7
+P-512   [SUCCESS]
+Listing...
+        file1.c         @0      SIZE:3
+        file2.c         @1      SIZE:8
+        file4.c         @2      SIZE:7
+        a.out           @3      SIZE:5
+        lab2.jav        @4      SIZE:7
+        file1.c         @5      SIZE:3
+        file2.c         @6      SIZE:8
+        file4.c         @7      SIZE:7
+        a.out           @8      SIZE:5
+        lab1.ja         @9      SIZE:6
+        [SUCCESS]
+Reading file2.c @4...
+        The first 20 bytes of file2.c
+        are: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Reading file2.c @5...
+        The first 20 bytes of file2.c
+        are: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Reading file2.c @6...
+        The first 20 bytes of file2.c
+        are: 
+        [SUCCESS]
+Deleting lab1.ja...
+P-128   [SUCCESS]
+Creating lab2.jav...
+P-608   Checking that there is space on the disk.
+        FBL: 1111111111111111111111111111111111111111111111111110000001110000
+             0000000000000000000000000000000000000000000000000000000000000000
+        There is. Attempting to create the file...
+                Name: lab2.jav
+                Size: 7
+P-608   [SUCCESS]
+Reading a.out @1...
+        The first 20 bytes of a.out
+        are: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Reading a.out @3...
+        The first 20 bytes of a.out
+        are: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Reading a.out @0...
+        The first 20 bytes of a.out
+        are: aaaaaaaaaaaaaaaaaaaa
+        [SUCCESS]
+Listing...
+        file1.c         @0      SIZE:3
+        file2.c         @1      SIZE:8
+        file4.c         @2      SIZE:7
+        a.out           @3      SIZE:5
+        lab2.jav        @4      SIZE:7
+        file1.c         @5      SIZE:3
+        file2.c         @6      SIZE:8
+        file4.c         @7      SIZE:7
+        a.out           @8      SIZE:5
+        lab2.jav        @9      SIZE:7
+        [SUCCESS]
+(precise)patrick@localhost:~/Desktop/C++/filesystem$ 

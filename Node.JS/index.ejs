@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>ArtRank</title>
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="/scripts/art.js"></script>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="jquery.js"></script>
+	<script src="jquery.sticky.js"></script>
+	<script>
+	  $(document).ready(function(){
+	    $("#sticker").sticky({topSpacing:0});
+	  });
+	</script> 
+
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/default.css" rel="stylesheet">
+    <link href="/css/simple-sidebar.css" rel="stylesheet">
+
+<!-- Priming audio-->
+	<script type="text/javascript" src="lib/audio-player/audio-player.js"></script>
+        <script type="text/javascript">
+            AudioPlayer.setup("lib/audio-player/player.swf", {
+                width: 290,
+		animation: "no",
+		bg: "B9B9FF",
+		leftbg: "031634",
+		lefticon: "4F7DB2",
+		track: "ffffff",
+		tracker: "4F7DB2",
+		text: "000000",
+		loader: "000000",
+		righticon: "4F7DB2",
+		rightbg: "031634",
+		volslider: "4F7DB2",
+		skip: "ffffff",
+            });
+        </script>
+    	<!--<script src="lib/audiojs/audio.min.js"></script>
+	<script>
+	  audiojs.events.ready(function() {
+	    var as = audiojs.createAll();
+	  });
+	</script>-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<!-- Begin Header -->
+<% include site-head.html  %>
+
+<body ng-app = "artBoard" ng-controller = "artCtrl as arts" style="background-color:#B9B9FF">
+	<div id="wrapper">
+
+	<% include sidebar.html  %>
+
+		<div id="page-content-wrapper">
+
+			<!--JUMBOTRON-->
+			<div class = "container-fluid" color=#456785>
+				<div class="jumbotron">          <!-- Set this to only show if a user is logged in -->
+					<h1>Welcome to ArtRank!</h1>
+					<p>The only art website designed for artists, not advertisers</p>
+					<p><a class="btn btn-primary btn-lg" href="/sign-up" role="button">
+						Sign Up for an Account</a></p>
+				</div>
+			</div>
+
+			<!--FEATURED CONTENT-->
+		  	<div class = "container-fluid">
+
+				<!--WRITING ROW-->
+				<div class="row">
+					<h1 style="padding-left: 15px;">Highest Ranked Writing
+					<small><a class ="btn btn-default" href="./top-writing" role = "button">
+						 More </a></p></small></h1>
+					<div class = "col-md-4" ng-repeat="txtart in textArt | filter:query| orderBy:orderProp:true | limitTo:quantity">
+
+						<% include panel-writing.html %>
+
+					</div>
+				</div>
+
+				<!--VISUAL MEDIA ROW-->
+				<div class="row">
+					<h1 style="padding-left: 15px;"> Highest Ranked Art
+					<small><a class ="btn btn-default" href="./top-img" role = "button">
+						 More </a></small></h1>
+					<div class = "col-md-3" ng-repeat="imgart in imageArt | filter:query| orderBy:orderProp:true | limitTo:quantity">
+
+						<% include panel-img.html  %>
+
+					</div>
+				</div>
+
+				<!--AUDIO MEDIA ROW-->
+				<div class="row">
+					<h1 style="padding-left: 15px;"> Highest Ranked Music
+					<small><a class ="btn btn-default" href="./top-audio" role = "button">
+						 More </a></p></small></h1>
+					<div class = "col-md-4" ng-repeat="audioart in audioArt | filter:query| orderBy:orderProp:true | limitTo:quantity">
+
+
+						<% include panel-audio.html  %>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<% include toggle-sidebar.html %>
+
+</html>

@@ -1,0 +1,119 @@
+closh> ls
+  count> 3
+  [p]arallel or [s]equential> s
+  timeout> 3
+process 24822
+hello24909
+process 24909
+a.out  closh.c  closh-starter.tar.gz  helloworld.c  losh.c  README.txt
+goodbye24909
+process 24822
+hello24910
+process 24910
+a.out  closh.c  closh-starter.tar.gz  helloworld.c  losh.c  README.txt
+goodbye24910
+process 24822
+hello24911
+process 24911
+a.out  closh.c  closh-starter.tar.gz  helloworld.c  losh.c  README.txt
+goodbye24911
+closh> ls
+  count> 3
+  [p]arallel or [s]equential> p
+  timeout> 3
+process 24822
+hello24920
+goodbye24920
+process 24822
+hello24921
+goodbye24921
+process 24822
+hello24922
+goodbye24922
+process 24921
+process 24920
+a.out  closh.c  closh-starter.tar.gz  helloworld.c  losh.c  README.txt
+process 24922
+a.out  closh.c  closh-starter.tar.gz  helloworld.c  losh.c  README.txt
+a.out  closh.c  closh-starter.tar.gz  helloworld.c  losh.c  README.txt
+closh> top
+  count> 1
+  [p]arallel or [s]equential> s
+  timeout> 1
+[...]screen was cleared
+Cpu(s):  5.3%us,  1.3%sy,  0.2%ni, 92.9%id,  0.3%wa,  0.0%hi,  0.0%si,  0
+Mem:   1923120k total,  1292412k used,   630708k free,    39416k buffers
+Swap:  2817068k total,        0k used,  2817068k free,   561812k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND     
+ 2025 patrick   20   0  543m 125m  76m S    4  6.7   1:54.77 chrome      
+ 9034 patrick   20   0  697m  98m  44m S    2  5.2   1:40.10 chrome      
+24707 patrick   20   0  939m  67m  31m S    2  3.6   0:05.58 chrome      
+    1 root      20   0 11776 2168 1296 S    0  0.1   0:00.34 init        
+    2 root      20   0     0    0    0 S    0  0.0   0:00.00 kthreadd    
+    3 root      20   0     0    0    0 S    0  0.0   0:00.03 ksoftirqd/0 
+    5 root       0 -20     0    0    0 S    0  0.0   0:00.00 kworker/0:0H
+    7 root       0 -20     0    0    0 S    0  0.0   0:00.00 kworker/u:0H
+    8 root      RT   0     0    0    0 S    0  0.0   0:00.04 migration/0 
+    9 root      20   0     0    0    0 S    0  0.0   0:00.00 rcu_bh      
+   10 root      20   0     0    0    0 S    0  0.0   0:01.00 rcu_sched   
+   11 root      RT   0     0    0    0 S    0  0.0   0:00.04 watchdog/0  
+   12 root      RT   0     0    0    0 S    0  0.0   0:00.04 watchdog/1  
+   13 root      20   0     0    0    0 S    0  0.0   0:00.03 ksoftirqd/1 
+   16 root       0 -20     0    0    0 S    0  0.0   0:00.00 kworker/1:0H
+   17 root       0 -20     0    0    0 S    0  0.0   0:00.00 khelper     
+   18 root      20   0     0    0    0 S    0  0.0   0:00.00 kdevtmpfs   
+   19 root       0 -20     0    0    0 S    0  0.0   0:00.00 netns       
+   20 root      20   0     0    0    0 S    0  0.0   0:00.00 bdi-default 
+   21 root       0 -20     0    0    0 S    0  0.0   0:00.00 kblockd     
+   22 root       0 -20     0    0    0 S    0  0.0   0:00.00 ata_sff     
+   23 root      20   0     0    0    0 S    0  0.0   0:00.01 khubd       
+   25 root      20   0     0    0    0 S    0  0.0   0:00.00 khungtaskd  
+   26 root      20   0     0    0    0 S    0  0.0   0:00.00 kswapd0     
+   27 root      20   0     0    0    0 S    0  0.0   0:00.00 fsnotify_mar
+   28 root      20   0     0    0    0 S    0  0.0   0:00.00 ecryptfs-kth
+   29 root       0 -20     0    0    0 S    0  0.0   0:00.00 crypto      
+   44 root      20   0     0    0    0 S    0  0.0   0:00.00 scsi_eh_0   
+   45 root      20   0     0    0    0 S    0  0.0   0:00.00 scsi_eh_1   
+goodbye25050
+closh> 
+closh> top
+  count> 2
+  [p]arallel or [s]equential> p
+  timeout> 2
+Cpu(s):  5.3%us,  1.3%sy,  0.2%ni, 92.9%id,  0.3%wa,  0.0%hi,  0.0%si,  0
+Mem:   1923120k total,  1291048k used,   632072k free,    39508k buffers
+Swap:  2817068k total,        0k used,  2817068k free,   563544k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND     
+ 2025 patrick   20   0  544m 127m  77m S    4  6.8   1:58.87 chrome      
+ 9034 patrick   20   0  696m  96m  45m S    4  5.1   1:44.44 chrome      
+ 1570 231        0 -20 51888  18m 5764 S    2  1.0   0:21.11 X           
+ 1792 patrick   20   0  680m 188m  75m S    2 10.0   3:55.58 chrome      
+24707 patrick   20   0  939m  67m  31m S    2  3.6   0:06.51 chrome      
+    1 root      20   0 11776 2168 1296 S    0  0.1   0:00.34 init        
+    2 root      20   0     0    0    0 S    0  0.0   0:00.00 kthreadd    
+    3 root      20   0     0    0    0 S    0  0.0   0:00.03 ksoftirqd/0 
+    5 root       0 -20     0    0    0 S    0  0.0   0:00.00 kworker/0:0H
+    7 root       0 -20     0    0    0 S    0  0.0   0:00.00 kworker/u:0H
+    8 root      RT   0     0    0    0 S    0  0.0   0:00.05 migration/0 
+    9 root      20   0     0    0    0 S    0  0.0   0:00.00 rcu_bh      
+   10 root      20   0     0    0    0 S    0  0.0   0:01.01 rcu_sched   
+   11 root      RT   0     0    0    0 S    0  0.0   0:00.04 watchdog/0  
+   12 root      RT   0     0    0    0 S    0  0.0   0:00.04 watchdog/1  
+   13 root      20   0     0    0    0 S    0  0.0   0:00.03 ksoftirqd/1 
+   16 root       0 -20     0    0    0 S    0  0.0   0:00.00 kworker/1:0H
+   17 root       0 -20     0    0    0 S    0  0.0   0:00.00 khelper     
+   18 root      20   0     0    0    0 S    0  0.0   0:00.00 kdevtmpfs   
+   19 root       0 -20     0    0    0 S    0  0.0   0:00.00 netns       
+   20 root      20   0     0    0    0 S    0  0.0   0:00.00 bdi-default 
+   21 root       0 -20     0    0    0 S    0  0.0   0:00.00 kblockd     
+   22 root       0 -20     0    0    0 S    0  0.0   0:00.00 ata_sff     
+   23 root      20   0     0    0    0 S    0  0.0   0:00.01 khubd       
+   25 root      20   0     0    0    0 S    0  0.0   0:00.00 khungtaskd  
+   26 root      20   0     0    0    0 S    0  0.0   0:00.00 kswapd0     
+   27 root      20   0     0    0    0 S    0  0.0   0:00.00 fsnotify_mar
+   28 root      20   0     0    0    0 S    0  0.0   0:00.00 ecryptfs-kth
+   29 root       0 -20     0    0    0 S    0  0.0   0:00.00 crypto      
+
+closh> 

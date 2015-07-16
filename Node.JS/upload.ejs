@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>ArtRank</title>
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="/scripts/art.js"></script>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/lib/ng-file-upload/angular-file-upload-shim.js"></script>
+    <script src="/lib/ng-file-upload/angular-file-upload.js"></script>
+    <script src="/scripts/upload.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/default.css" rel="stylesheet">
+    <link href="/css/simple-sidebar.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+</style>
+
+  </head>
+
+	
+<body>
+<% include site-head.html %>
+
+<div class="panel panel-primary abisso-panel-primary fixed-size-panel"> 
+	<div class="center-wrapper">
+		<h3>Upload Image Media </h3>
+		<form method="POST" enctype="multipart/form-data" action="/img-upload">
+			<p> Title: </p><input type="text" name="title"><br></br>
+			<p> Artist: </p><input type="text" name="artist"><br></br>
+			<p> Tags:</p>
+			<p> (Seperate tags with spaces and include at least one tag): </p>
+				<input type="text" name="tags">
+			<p> File: </p>
+				<input align="middle" size=60 type="file" name="image" accept="image/*">
+			<input content-type type="submit" value="Submit">
+		</form>
+	</div>
+</div>
+
+
+</body>
+</html>

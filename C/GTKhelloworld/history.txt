@@ -1,0 +1,9 @@
+
+  572  cc -Wall GTKhelloworld.c -o helloworld $(pkg-config --cflags --libs gtk+-3.0)
+  573  ls
+  574  ./helloworld 
+  575  startunity
+  576  ls
+  577  cc -Wall GTKhelloworld.c -o helloworld $(pkg-config --cflags --libs gtk+-3.0)
+  578  startunity
+  579  history > history.txt

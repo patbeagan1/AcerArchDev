@@ -1,0 +1,20 @@
+elnux1 PatrickBeagan) > ./a.out 
+Enter the number of Map threads.
+3
+Enter the number of Reduce threads.
+3
+MThread: 1
+MThread: 2
+MAP: 0
+MThread: 3
+MAP: 1
+RThread: 1
+MAP: 2
+RThread: 2
+REDUCE: 0
+REDUCE: 1
+Strings: ___foo0.txt_
+RThread: 3
+Strings: ___foo0.txt_
+REDUCE: 2
+Segmentation fault (core dumped)

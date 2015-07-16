@@ -1,0 +1,41 @@
+ummyDisk
+C f1 6
+C f2 6
+C f3 6
+C f4 6
+C f5 6
+C f6 6
+C f7 6
+C f8 6
+C f9 6
+C f10 6
+C f11 6
+C f12 6
+C f13 6
+C f14 6
+C f15 6
+C f16 6
+D f2
+D f4
+D f6
+D f8
+D f10
+D f12
+D f14
+D f16
+C l1 8
+C l2 8
+C l3 8
+C l4 8
+C l5 8
+C l6 8
+C l7 8
+C l8 8
+D f1
+D f3
+D f5
+D f7
+D f9
+D f11
+D f13
+D f15

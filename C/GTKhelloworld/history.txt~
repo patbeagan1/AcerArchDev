@@ -1,0 +1,579 @@
+    1  ls
+    2  ls -la
+    3  sudo apt-get install nano 
+    4  ls
+    5  sudo apt-get install nano
+    6  sudo apt-get install gedit
+    7  ls
+    8  cd ..
+    9  ls 
+   10  cd patrick/
+   11  ls
+   12  cd /
+   13  ls
+   14  cd media/
+   15  ls
+   16  cd removable
+   17  ls
+   18  cd UUI/
+   19  ;s
+   20  ls
+   21  cd home/
+   22  ls
+   23  cd patrick/
+   24  ls
+   25  cd Documents/
+   26  ls
+   27  cd C
+   28  ls
+   29  gcc helloworld.c 
+   30  ./a
+   31  ./a.out
+   32  cp helloworld.c ~
+   33  cd ~
+   34  ls
+   35  gcc helloworld.c 
+   36  ls
+   37  ./a.out 
+   38  mv helloworld.c Desktop/
+   39  mv a.out Desktop/
+   40  ls
+   41  sudo apt-get install GPicView
+   42  sudo apt-get install mirage
+   43  ls
+   44  cd Downloads/
+   45  ls
+   46  wget http://media.steampowered.com/client/installer/steam.deb
+   47  startunity
+   48  exit
+   49  cd ~
+   50  ls
+   51  cd Downloads/
+   52  ls
+   53  nano pegasystemsTalk.txt 
+   54  clear
+   55  ls
+   56  clear
+   57  startunity
+   58  cd ~
+   59  logout
+   60  ls
+   61  cd Downloads/
+   62  cd ..
+   63  ls
+   64  cd Desktop/
+   65  ls
+   66  logout
+   67  ls
+   68  cd Desktop/
+   69  ls
+   70  mkdir ChromeApps
+   71  ls
+   72  cd ChromeApps/
+   73  ls
+   74  nano window.html
+   75  nano background.js
+   76  nano manifest.json
+   77  ls
+   78  cd ~/Downloads/
+   79  ls
+   80  cp calculator-16.png ../Desktop/ChromeApps/
+   81  cp calculator-128.png ../Desktop/ChromeApps/
+   82  cd ..
+   83  ls
+   84  cd Desktop/
+   85  ls
+   86  cd ChromeApps/
+   87  ls
+   88  ls
+   89  cd Downloads/
+   90  ls
+   91  cd ChromeApps/
+   92  ls
+   93  links Create\ Your\ First\ App\ -\ Google\ Chrome.mhtml 
+   94  sudo lshw
+   95  sudo apt-get install lshw
+   96  lshw
+   97  sudo lshw
+   98  man lshw
+   99  sudo lshw
+  100  sudo lshw > deviceDetails.txt
+  101  ls
+  102  mv deviceDetails.txt Desktop/
+  103  ls
+  104  cd Desktop/
+  105  ls
+  106  cat deviceDetails.txt 
+  107  cat deviceDetails.txt | grep arm
+  108  cat deviceDetails.txt | grep *a*
+  109  man gre
+  110  man grep
+  111  grep *arm* deviceDetails.txt 
+  112  grep *m* deviceDetails.txt 
+  113  grep *pm* deviceDetails.txt 
+  114  man grep
+  115  grep -e *a* | -f deviceDetails.txt 
+  116  grep -e *a* -f deviceDetails.txt 
+  117  grep -e *arm* -f deviceDetails.txt 
+  118  grep -e *res* -f deviceDetails.txt 
+  119  grep -e id: -f deviceDetails.txt 
+  120  grep -e "id:" -f deviceDetails.txt 
+  121  fg
+  122  clear
+  123  startunity
+  124  sudo apt-get update
+  125  sudo apt-get upgrade unity
+  126  sudo startunity
+  127  history
+  128  ls
+  129  logout
+  130  links google.com
+  131  logout
+  132  exit
+  133  sudo apt-add-repository ppa:glasen/intel-driver
+  134  sudo apt-get install --install-recommends linux-generic-lts-quantal xserver-xorg-lts-quantal libgl1-mesa-glx-lts-quantal
+  135  sudo apt-get update
+  136  sudo apt-get -y dist-upgrade
+  137  sudo apt-get install mesa-utils
+  138  glxinfo | grep "OpenGL version
+  139  sudo apt-get install mesa-utils
+  140  glxinfo | grep "OpenGL version" # verify you have mesia 9.1.6
+  141  sudo startunity
+  142  ls
+  143  cd Desktop/
+  144  ls
+  145  startunity
+  146  exit
+  147  lmms
+  148  top
+  149  lmms
+  150  ps
+  151  top
+  152  sudo apt-get upgrade wine
+  153  steam
+  154  ls
+  155  cd /media/
+  156  ls
+  157  cd removable
+  158  ls
+  159  cd UUI/
+  160  ls
+  161  cp communistmanifesto_1_marx.mp3 ~/Downloads/
+  162  steam
+  163  wine
+  164  cd ~/Downloads/
+  165  ls
+  166  wine a.exe 
+  167  ls
+  168  wine a.exe
+  169  logout
+  170  exit
+  171  # Install needed tools
+  172  sudo apt-get install software-properties-common wget
+  173  sudo add-apt-repository ppa:kxstudio-debian/kxstudio
+  174  sudo apt-get update
+  175  sudo apt-get install kxstudio-repos
+  176  sudo apt-get update
+  177  sudo apt-get install lmms
+  178  lmms
+  179  startunity
+  180  udo apt-add-repository ppa:ubuntu-wine/ppa
+  181  sudo apt-get update
+  182  sudo apt-add-repository ppa:ubuntu-wine/ppa
+  183  sudo apt-get update
+  184  sudo apt-get install wine
+  185  ls
+  186  cd Downloads/
+  187  ls
+  188  wine a.exe
+  189  ls
+  190  startunity
+  191  logout
+  192  sudo apt-get install geany
+  193  lmms
+  194  ls
+  195  history
+  196  geany
+  197  ls
+  198  sudo apt-get install libvte-dev
+  199  geany
+  200  ls
+  201  cd Desktop/
+  202  ls
+  203  cd Java/
+  204  ;s
+  205  l
+  206  ls
+  207  l
+  208  ls
+  209  ls -l
+  210  java helloworld.class 
+  211  sudo apt-get install openjdk-7-jdk openjdk-7-jre
+  212  java
+  213  ls
+  214  cd Desktop/
+  215  ls
+  216  cd C
+  217  ls
+  218  mkdir mapReduce
+  219  cd mapReduce/
+  220  nano instructions.txt
+  221  ls
+  222  cd ..
+  223  ls
+  224  ./Helloworld 
+  225  mkdir helloWorld
+  226  mv Helloworld hello
+  227  ls
+  228  ./hello
+  229  mv hello
+  230  mv hello HelloWorld
+  231  mv HelloWorld helloWorld/
+  232  ls
+  233  mv -v helloworld* helloWorld/
+  234  ls
+  235  ./Fibonacci 
+  236  ls
+  237  mkdir fibonacci
+  238  mv -v ?ibo* fibonacci/
+  239  ls
+  240  cd fibonacci/
+  241  ls
+  242  cd ..
+  243  ls
+  244  mv closh.zip closh
+  245  ls
+  246  cat processStarter.c 
+  247  ls
+  248  ./ProcessStarter 
+  249  mkdir processStarter
+  250  mv -v ?roce* processStarter/
+  251  ls
+  252  mkdir pascalTriangle
+  253  mv pascalTriangle.c pascalTriangle
+  254  ls
+  255  ls -l
+  256  ./a.out 
+  257  rm a.out 
+  258  ls
+  259  cd map
+  260  cd mapReduce/
+  261  ls
+  262  touch mapReduce.c
+  263  ls
+  264  nano mapReduce.c 
+  265  cat instructions.txt 
+  266  ls
+  267  gcc mapReduce.c 
+  268  clear
+  269  gcc mapReduce.c 
+  270  clear
+  271  gcc mapReduce.c 
+  272  clear
+  273  gcc mapReduce.c 
+  274  cal
+  275  cal -nov
+  276  cal -11
+  277  cal -d 2014-11
+  278  ls
+  279  gcc mapReduce.c 
+  280  clear
+  281  gcc mapReduce.c 
+  282  clear
+  283  gcc mapReduce.c 
+  284  gcc ls
+  285  gcc mapReduce.c 
+  286  clear
+  287  gcc mapReduce.c 
+  288  ls
+  289  clear
+  290  gcc mapReduce.c 
+  291  gcc -pthread mapReduce.c 
+  292  ls
+  293  ./a.out 
+  294  gcc -pthread mapReduce.c 
+  295  ./a.out 
+  296  gcc -pthread mapReduce.c 
+  297  ./a.out 
+  298  ls
+  299  cd ..
+  300  kls
+  301  ls
+  302  cd threadHelloWorld/
+  303  ls
+  304  gcc -pthread threadHelloWorld.c 
+  305  ls
+  306  cd ..
+  307  ls
+  308  cd mapReduce/
+  309  ls
+  310  cat int
+  311  cat instructions.txt 
+  312  ls
+  313  nano instructions.txt 
+  314  cat instructions.txt 
+  315  touch foo1.txt
+  316  ls
+  317  nano foo1.txt 
+  318  nano theSnowMan.txt
+  319  mv foo1.txt loremIpsum.txt
+  320  ls
+  321  clear
+  322  nano mapReduce.c 
+  323  gcc mapReduce.c 
+  324  gcc -pthread mapReduce.c 
+  325  ls
+  326  ./a.out 
+  327  gcc -pthread mapReduce.c 
+  328  ./a.out 
+  329  gcc -pthread mapReduce.c 
+  330  ./a.out 
+  331  gcc -pthread mapReduce.c 
+  332  ./a.out 
+  333  gcc -pthread mapReduce.c 
+  334  ./a.out 
+  335  gcc -pthread mapReduce.c 
+  336  ./a.out 
+  337  gcc -pthread mapReduce.c 
+  338  ./a.out 
+  339  gcc -pthread mapReduce.c 
+  340  ./a.out 
+  341  gcc -pthread mapReduce.c 
+  342  ./a.out 
+  343  gcc -pthread mapReduce.c 
+  344  ./a.out 
+  345  gcc -pthread mapReduce.c 
+  346  ./a.out 
+  347  gcc -pthread mapReduce.c 
+  348  ./a.out 
+  349  gcc -pthread mapReduce.c 
+  350  ./a.out 
+  351  gcc -pthread mapReduce.c 
+  352  ./a.out 
+  353  gcc -pthread mapReduce.c 
+  354  ./a.out 
+  355  gcc -pthread mapReduce.c 
+  356  ./a.out 
+  357  gcc -pthread mapReduce.c 
+  358  ./a.out 
+  359  gcc -pthread mapReduce.c 
+  360  ./a.out 
+  361  gcc -pthread mapReduce.c 
+  362  ./a.out 
+  363  gcc -pthread mapReduce.c 
+  364  ./a.out 
+  365  gcc -pthread mapReduce.c 
+  366  ./a.out 
+  367  gcc -pthread mapReduce.c 
+  368  ./a.out 
+  369  gcc -pthread mapReduce.c 
+  370  ./a.out 
+  371  gcc -pthread mapReduce.c 
+  372  ./a.out 
+  373  gcc -pthread mapReduce.c 
+  374  ./a.out 
+  375  gcc -pthread mapReduce.c 
+  376  ./a.out 
+  377  gcc -pthread mapReduce.c 
+  378  ./a.out 
+  379  gcc -pthread mapReduce.c 
+  380  clear
+  381  gcc -pthread mapReduce.c 
+  382  clear
+  383  gcc -pthread mapReduce.c 
+  384  ./a.out 
+  385  gcc -pthread mapReduce.c 
+  386  ./a.out 
+  387  gcc -pthread mapReduce.c 
+  388  ./a.out 
+  389  ls
+  390  cd Desktop/
+  391  ls
+  392  cd C
+  393  ls
+  394  cd mapReduce/
+  395  ls
+  396  nano mapReduce.c 
+  397  ls
+  398  clerar
+  399  ls
+  400  clear
+  401  ls
+  402  gcc mapReduce.c 
+  403  ls
+  404  ./a.out 
+  405  l
+  406  ls
+  407  ./a.out 
+  408  nano mapReduce.c 
+  409  clear
+  410  ls
+  411  cp mapReduce.c threadHelloWorld.c
+  412  ls
+  413  mv threadHelloWorld.c ..
+  414  ls
+  415  cd ..
+  416  ls
+  417  mkdir threadHelloWorld
+  418  mv threadHelloWorld.c threadHelloWorld
+  419  ls
+  420  cd threadHelloWorld/
+  421  s
+  422  ls
+  423  gcc -pthread threadHelloWorld.c 
+  424  nano threadHelloWorld.c 
+  425  ls
+  426  ./a.out 
+  427  cd ..
+  428  ls
+  429  cd mapReduce/
+  430  ls
+  431  nano mapReduce.c 
+  432  clear
+  433  ls
+  434  gcc mapReduce.c 
+  435  nano mapReduce.c 
+  436  ls
+  437  cd C
+  438  ls
+  439  gcc -pthread mapReduce/
+  440  cd mapReduce/
+  441  ls
+  442  gcc -pthread mapReduce.c 
+  443  ./a.out 
+  444  gcc -pthread mapReduce.c 
+  445  ./a.out 
+  446  gcc -pthread mapReduce.c 
+  447  ./a.out 
+  448  3
+  449  gcc -pthread mapReduce.c 
+  450  ./a.out 
+  451  ls
+  452  cd ..
+  453  ls
+  454  ssh pbeagan@elnux.cs.umass.edu
+  455  ls
+  456  ssh
+  457  help
+  458  logout
+  459  ls
+  460  cd Desktop/
+  461  ls
+  462  cd C
+  463  ls
+  464  cd mapReduce/
+  465  ls
+  466  nano mapReduce.c 
+  467  clear
+  468  ls
+  469  touch MapReduce.cpp
+  470  ls
+  471  nano MapReduce.cpp 
+  472  g++ MapReduce.cpp 
+  473  ./a.out 
+  474  nano MapReduce.cpp 
+  475  g++ MapReduce.cpp 
+  476  ./a.out 
+  477  nano MapReduce.cpp 
+  478  ./a.out 
+  479  nano MapReduce.cpp 
+  480  g++ MapReduce.cpp 
+  481  ./a.out 
+  482  nano MapReduce.cpp 
+  483  g++ MapReduce.cpp 
+  484  ./a.out 
+  485  nano MapReduce.cpp 
+  486  clear
+  487  ls
+  488  logout
+  489  ls
+  490  loguout
+  491  logout
+  492  ls
+  493  logout
+  494  ls
+  495  cd Desktop/
+  496  ls
+  497  cd C
+  498  ls
+  499  cd closh/
+  500  ls
+  501  cat closh.c
+  502  nano cloch.c
+  503  ls
+  504  nano closh.c
+  505  clear
+  506  ls
+  507  cd ..
+  508  sl
+  509  ls
+  510  cd threadHelloWorld/
+  511  ls
+  512  cat threadHelloWorld.c 
+  513  ls
+  514  cd D
+  515  ls
+  516  cd Desktop/
+  517  ls
+  518  cd C
+  519  lsl
+  520  ls
+  521  cd closh/
+  522  ls
+  523  cd ..
+  524  ls
+  525  cd mapReduce/
+  526  ls
+  527  rm *
+  528  ls
+  529  cd ..
+  530  ls
+  531  cd mapReduce/
+  532  ls
+  533  nano mapReduce.c
+  534  gcc -g -pthread mapReduce.c 
+  535  ls
+  536  ./a.out 
+  537  nano README.txt
+  538  ls
+  539  clear
+  540  nano sampleOutput.txt
+  541  ls
+  542  nano mapReduce.c 
+  543  ls
+  544  cd ..
+  545  ls
+  546  zip -r PatrickBeagan.zip mapReduce/
+  547  ls
+  548  cp PatrickBeagan.zip  ~/Downloads/
+  549  ls
+  550  cd Downloads/
+  551  ls
+  552  unzip PatrickBeagan\ \(1\).zip
+  553  ls
+  554  cd mapReduce/
+  555  ls
+  556  ./a.out 
+  557  lynx google.com
+  558  links google.com
+  559  ls
+  560  cd Desktop/
+  561  ls
+  562  cd C
+  563  ;s
+  564  ls
+  565  mkdir GTKhelloworld
+  566  cd GTKhelloworld/
+  567  ;s
+  568  ls
+  569  nano GTKhelloworld.c
+  570  sudo apt-get install libgtk-3-dev
+  571  ls
+  572  cc -Wall GTKhelloworld.c -o helloworld $(pkg-config --cflags --libs gtk+-3.0)
+  573  ls
+  574  ./helloworld 
+  575  startunity
+  576  ls
+  577  cc -Wall GTKhelloworld.c -o helloworld $(pkg-config --cflags --libs gtk+-3.0)
+  578  startunity
+  579  history > history.txt
